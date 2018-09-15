@@ -1,0 +1,81 @@
+//out: menu.css, compress: true, sourcemap: true
+
+.menu {
+  width: 100%; padding: 100px 0;
+  position: relative; height: auto; overflow: auto;
+  .menu-decal {
+    position: absolute; left: 0; top: 0;
+    width: 250px; height: 100vh;
+    background-color: #222; z-index: 0;
+  }
+  .menu-box {
+    z-index: 1; position: relative;
+    width: 95%; float: right; background: #fff;
+    text-align: center; box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.1);
+    padding: 50px 75px; box-sizing: border-box;
+    .menu-head {
+      position: relative;
+      .subTitle {
+        text-transform: uppercase;
+        letter-spacing: 4px; font-size: 1.2em;
+        font-weight: 400;
+      }
+      .title {
+        font-size: 3.5em; margin-top: 5px; line-height: 2em;
+      }
+    }
+    .menu-decal-image {
+      position: absolute; right: 0; top: 0;
+      width: 250px; height: 250px;
+      img {
+        width: 100%; transform: rotate(90deg);
+      }
+    }
+    .menu-items {
+      width: 100%;
+      .menu-item {
+        width: 100%; float: left; padding: 75px 0;
+        .menu-image {
+          width: 20%; float: left;
+          img {
+            width: 70%; margin: 0 15%;
+          }
+        }
+        .menu-item-left {
+          width: 60%; float: left;
+          text-align: left;
+          .title {
+
+          }
+          .details {
+            color: #999;
+          }
+        }
+        .menu-item-right {
+          width: 20%; float: left; text-align: center;
+          .menu-price {
+
+          }
+          .menu-price-extra {
+            color: #222;
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+    .button {
+      padding: 20px 40px;
+      position: absolute;
+      right: 0; bottom: 0;
+      background-color: #222;
+      color: #eee; text-decoration: none;
+      font-family: 'Raleway';
+      font-weight: 600;
+      i {
+        vertical-align: middle;
+        margin-bottom: 5px;
+        margin-left: 10px;
+      }
+    }
+  }
+}

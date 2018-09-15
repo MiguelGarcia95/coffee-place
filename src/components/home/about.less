@@ -1,0 +1,55 @@
+//out: about.css, compress: true, sourcemap: false
+
+.about {
+  width: 100%;
+  height: auto; min-height: 100vh;
+  padding: 100px 0px;
+  overflow: auto;
+  .image-container {
+    width: 50%; float: left; position: relative;
+    .background-image {
+      width: 70%; left: 0;
+      position: absolute; z-index: 2;
+      img {
+        width: 100%;
+      }
+    }
+    .foreground-image {
+      width: 75%; right: 0px;
+      position: absolute; z-index: 3;
+      top: 75px;
+      img {
+        width: 100%;
+        box-shadow: 0px 0px 35px 1px rgba(0,0,0,0.2);
+      }
+    }
+  }
+  .content-container {
+    width: 50%; float: right; text-align: left;
+    box-sizing: border-box; padding: 50px;
+    .content {
+      box-sizing: border-box; padding-right: 200px;
+      padding-bottom: 100px;
+      .title {
+        font-size: 3.5em;
+        margin-top: 5px;
+        line-height: 2em;
+      }
+      .details {
+        color: #444; font-size: 1.1em;
+      }
+    }
+    .button {
+      padding: 20px;
+      background-color: #222;
+      color: #eee; text-decoration: none;
+      font-family: 'Raleway';
+      font-weight: 600;
+      i {
+        vertical-align: middle;
+        margin-bottom: 5px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
