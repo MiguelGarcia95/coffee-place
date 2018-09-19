@@ -76,7 +76,7 @@ class Menu extends Component {
 
           </div>
 
-          <a href="/" className="button">Learn More {' '}{' '} <i className="fas fa-long-arrow-alt-right fa-2x"></i></a>
+          {/* <a href="/" className="button">Learn More {' '}{' '} <i className="fas fa-long-arrow-alt-right fa-2x"></i></a> */}
 
         </div>
       </div>

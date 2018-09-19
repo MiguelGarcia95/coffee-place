@@ -11,7 +11,7 @@ class Header extends Component {
             <h3 className="sub-title">{subTitle}</h3>
             <h1 className="title">{title}</h1>
             <p className="details">{details}</p>
-            <a href={buttonLink} className="button">{buttonText} {' '}{' '} <i className="fas fa-long-arrow-alt-right fa-2x"></i></a>
+            {/* <a href={buttonLink} className="button">{buttonText} {' '}{' '} <i className="fas fa-long-arrow-alt-right fa-2x"></i></a> */}
           </div>
         </div>
         <div className="info-container">
