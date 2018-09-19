@@ -38,14 +38,14 @@
         .menu-image {
           width: 20%; float: left;
           img {
-            width: 70%; margin: 0 15%;
+            width: 100%;
           }
         }
         .menu-item-left {
-          width: 60%; float: left;
-          text-align: left;
+          width: 55%; float: left;
+          text-align: left; margin-left: 5%;
           .title {
-
+            margin-top: 0px;
           }
           .details {
             color: #999;
@@ -54,10 +54,10 @@
         .menu-item-right {
           width: 20%; float: left; text-align: center;
           .menu-price {
-
+            margin-top: 0px;
           }
           .menu-price-extra {
-            color: #222;
+            color: #999;
             font-size: 0.9em;
           }
         }
@@ -75,6 +75,196 @@
         vertical-align: middle;
         margin-bottom: 5px;
         margin-left: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .menu {
+    .menu-box {
+      .menu-items {
+        .menu-item {
+          .menu-image {
+            width: 25%;
+          }
+          .menu-item-left {
+            margin: 0 2.5%;
+          }
+          .menu-item-right {
+            width: 15%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .menu {
+    .menu-box {
+      padding: 50px;
+      .menu-head {
+        .title {
+          font-size: 3em; line-height: 1.5em;
+        }
+      }
+      .menu-decal-image {
+        width: 200px; height: 200px;
+      }
+      .menu-items {
+        .menu-item {
+          .menu-item-left {
+            .title {
+              font-size: 1.8em;
+            }
+            .details {
+              font-size: 0.9em;
+            }
+          }
+          .menu-item-right {
+            .menu-price {
+              font-size: 1.8em;
+            }
+            .menu-price-extra {
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
+      .button {
+        padding: 10px 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    .menu-box {
+      .menu-items {
+        .menu-item {
+          .menu-image {
+            width: 30%;
+          }
+          .menu-item-left {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .menu {
+    .menu-box {
+      width: 98%; padding: 30px;
+      .menu-head {
+        .subTitle {
+          font-size: 1em;
+        }
+        .title {
+          font-size: 2.5em; line-height: 1em;
+        }
+      }
+      .menu-decal-image {
+        width: 150px; height: 150px;
+      }
+      .menu-items {
+        .menu-item {
+          .menu-image {
+            width: 35%;
+          }
+          .menu-item-left {
+            .title {
+              font-size: 1.5em;
+            }
+            .details {
+              font-size: 0.9em;
+            }
+          }
+          .menu-item-right {
+            width: 10%;
+            .menu-price {
+              font-size: 1.5em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .menu {
+    .menu-decal {
+      height: 150vh;
+    }
+    .menu-box {
+      padding: 20px;
+      .menu-head {
+        .subTitle {
+          font-size: 0.9em;
+        }
+        .title {
+          font-size: 2em;
+        }
+      }
+      .menu-decal-image {
+        width: 100px; height: 100px;
+      }
+      .menu-items {
+        .menu-item {
+          .menu-image {
+            width: 50%; margin: 0 25%;
+          }
+          .menu-item-left {
+            margin: 0 25%;
+            text-align: center;
+            .title {
+              font-size: 2.5em;
+            }
+            .details {
+              font-size: 1em;
+            }
+          }
+          .menu-item-right {
+            width: 50%; margin: 0 25%;
+            text-align: center;
+            .menu-price {
+              margin-top: 10px;
+              font-size: 2em;
+            }
+            .menu-price-extra {
+              font-size: 0.9em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .menu {
+    .menu-box {
+      .menu-decal-image {
+        width: 80px; height: 80px;
+      }
+      .menu-items {
+        .menu-item {
+          .menu-image {
+            width: 70%; margin: 0 15%;
+          }
+          .menu-item-left {
+            width: 70%;
+            margin: 0 15%;
+          }
+          .menu-item-right {
+            width: 70%; margin: 0 15%;
+          }
+        }
       }
     }
   }

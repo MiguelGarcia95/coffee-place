@@ -14,12 +14,6 @@ class Header extends Component {
             <a href={buttonLink} className="button">{buttonText} {' '}{' '} <i className="fas fa-long-arrow-alt-right fa-2x"></i></a>
           </div>
         </div>
-        <div className="image-container">
-          <div className="image">
-            <img src={image} alt="header_coffee_image"/>
-          </div>
-          <a href="" className="address"></a>
-        </div>
         <div className="info-container">
           <div className="info">
             <span id="hours">{hours}</span>
@@ -31,10 +25,15 @@ class Header extends Component {
             </span>
           </div>
         </div>
+        <div className="image-container">
+          <div className="image">
+            <img src={image} alt="header_coffee_image"/>
+          </div>
+          <p className="address"><i className="fas fa-map-marker"></i> 123 Houston st, Houston, Texas 71700</p>
+        </div>
       </div>
     );
   }
-
 }
 
 export default Header;

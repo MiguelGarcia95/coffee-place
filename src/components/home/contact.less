@@ -5,12 +5,14 @@
   overflow: auto; position: relative;
   .coffee-decal {
     position: absolute; top: 0px; right: 0; width: 500px;
+    z-index: 1;
     img {
       width: 100%;
     }
   }
   .content {
     width: 500px; margin: auto; text-align: center;
+    position: relative; z-index: 2;
     .subTitle {
       text-transform: uppercase;
       letter-spacing: 4px; font-size: 1.2em;
@@ -31,9 +33,13 @@
         width: 100%; margin-bottom: 35px; font-size: 1em;
         padding: 10px; border: none;
         border-bottom: 1px solid black; font-family: 'Raleway';
+        outline: none;
+        &:focus {
+          box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.1);
+        }
       }
       .input-date {
-        width: 45%; float: left;
+        width: 100%; float: left;
       }
       .button {
         padding: 20px; background-color: #222;
@@ -41,6 +47,107 @@
         font-size: 1em; font-weight: 400;
         letter-spacing: 4px; text-transform: uppercase;
         border: none; width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .contact {
+    .coffee-decal {
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact {
+    .coffee-decal {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .contact {
+    .coffee-decal {
+      width: 250px;
+    }
+    .content {
+      width: 450px;
+      .subTitle {
+        font-size: 1em;
+      }
+      .title {
+        font-size: 3em;
+      }
+      .details {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .contact {
+    .coffee-decal {
+      width: 200px;
+    }
+    .content {
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .contact {
+    .coffee-decal {
+      width: 150px;
+    }
+    .content {
+      .subTitle {
+        font-size: 0.9em;
+      }
+      .title {
+        font-size: 2.5em;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .contact {
+    .coffee-decal {
+      width: 150px;
+    }
+    .content {
+      width: 350px;
+      .subTitle {
+        font-size: 0.9em;
+      }
+      .title {
+        font-size: 2.5em;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .contact {
+    .content {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .contact {
+    .content {
+      width: 250px;
+      .title {
+        font-size: 2em;
+        line-height: 1.5em;
+        margin-top: 30px;
       }
     }
   }
